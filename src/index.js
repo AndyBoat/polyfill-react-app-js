@@ -1,10 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// import "react-app-polyfill/ie11";
+// import "react-app-polyfill/stable";
+// import R from "core-js/stable";
+import "react-app-polyfill/ie11";
+import "core-js/features/array/at";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// eslint-disable-next-line no-unused-expressions
+// R;
+console.info(">>>[1,2,3].at(0)", [1, 2, 3].at(0));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
